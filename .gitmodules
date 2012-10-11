@@ -12,7 +12,7 @@
 	url = git://gitorious.org/vozmob/cdh_juarez_theme.git
 [submodule "modules/vojo_twentyone_cambridge"]
 	path = modules/vojo_twentyone_cambridge
-	url = git@gitorious.org:vozmob/vojo_twentyone_cambridge.git
+	url = git://gitorious.org/vozmob/vojo_twentyone_cambridge.git
 [submodule "themes/incourage"]
 	path = themes/incourage
-	url = git@github.com:c4fcm/Incourage-Vojo-Theme.git
+	url = git://github.com/c4fcm/Incourage-Vojo-Theme.git
