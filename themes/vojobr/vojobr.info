@@ -1,0 +1,21 @@
+ name = vojobr
+
+ description = Base de tema para vojo br
+
+ version = 1.0
+
+ core = 7.x
+
+ engine = phptemplate
+
+ stylesheets[all][] = css/style.css
+
+regions[topbar]	= Top Bar
+regions[menu] = Menu
+regions[carrossel] = Carrossel
+regions[actionbar] = Action Bar
+regions[boxshare] = Box Share
+regions[footer2] = Footer2
+regions[listahistoria] = Lista Historia
+regions[leaderboard] = Leader Board
+
