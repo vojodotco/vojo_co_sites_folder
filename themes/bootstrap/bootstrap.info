@@ -1,6 +1,6 @@
 name = Bootstrap
 description = Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.
-core = 7.x
+core = 6.x
 
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -141,7 +141,7 @@ simplytest_dependencies[] = jquery_update
 
 ; Information added by  packaging script on 2013-11-17
 version = "7.x-3.0"
-core = "7.x"
+core = "6.x"
 project = "bootstrap"
 datestamp = "1384678107"
 
