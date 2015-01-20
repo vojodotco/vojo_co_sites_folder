@@ -4,7 +4,7 @@
 
  version = 1.0
 
- core = 6.x
+ core = 6.28
 
  engine = phptemplate
 
