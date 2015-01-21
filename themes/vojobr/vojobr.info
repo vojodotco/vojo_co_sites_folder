@@ -4,9 +4,10 @@
 
  version = 1.0
 
- core = 6.28
+ core = 6.x
 
  engine = phptemplate
+
 
  stylesheets[all][] = css/style.css
 

@@ -1,31 +1,30 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Acrescentamos aqui o idioma da pagina e a direção do texto do idioma -->
+<html xmlns="http://www.w3.org/1999/xhtml"
+xml:lang="<?php print $language->language?>"
+lang="<?php print $language->language?>" dir="<?php print $language->dir?>">
 <head>
-  <title><?php print $title; ?></title>
-
-
+  <title><?php print $head_title; ?></title>
+<?php print $styles?>
+<?php print $head?>
 </head>
 
 <body>
+<?php print $header; ?>
    
     <div class="topbar">
        
-        <?php print render($page['topbar']); ?>
+        <?php print $topbar; ?>
             <div class="container">
                   <a class="logo" href="#">VOJO-BR</a>
                   
                      
                          
                                <div class="menu">
-                                    <?php if($main_menu): ?>
-
-                                    <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')))); ?>
-
-
-                          
-
-
-                          <?php endif?>     
+                                <?php if(isset($primary_links)) : ?>
+                                <?php print theme('links', $primary_links, array('class' =>'links primary-links'))?>
+                                <?php endif; ?>  
 
             </div>
     
@@ -35,78 +34,55 @@
  
   <div class="carrossel">
     
-    <?php print render($page['carrossel']); ?>
+    <?php print $carrossel; ?>
     </div>
   
   <div class="lista-historias">
+    <div class="historia">
+            <?php print $listahistoria;?>
+            <?php print $content?>
 
-            <?php print render($page['listahistoria']);?>
-    <div class="historia">
-      <a href="#">
-        <img src="img/historias.png" width="100%">
-        <br>
-        Lorem ipsum dolor sit amet
-      </a>
-    </div>
-    <div class="historia">
-      <a href="#">
-        <img src="img/historias2.png" width="100%">
-        <br>
-        Proin volutpat, urna sit amet vestibulum
-      </a>
-    </div>
-    <div class="historia">
-      <a href="#">
-        <img src="img/historias.png" width="100%">
-        <br>
-        Lorem ipsum dolor sit amet
-      </a>
-    </div>
-    <div class="historia">
-      <a href="#">
-        <img src="img/historias2.png" width="100%">
-        <br>
-        Proin volutpat, urna sit amet vestibulum
-      </a>
-    </div>
-    <div class="historia">
-      <a href="#">
-        <img src="img/historias.png" width="100%">
-        <br>
-        Lorem ipsum dolor sit amet
-      </a>
-    </div>
+     
+  </div>
+
   </div>
 
   <div class="leaderboard">
-<?php print render($page['leaderboard']);?>
+<?php print $leaderboard;?>
 
   Leaderboard<br>722x90</div>
 
 </div>
 
+
 <div class="actionbar">
 
-<?php print render($page['actionbar']);?>
+<?php print $actionbar;?>
   
   <input type="text" placeholder="E-mail">
   <input type="text" placeholder="Senha">
 
   <div class="box-share">
-  <?php print render($page['boxshare']); ?>
+  <?php print $boxshare; ?>
     <a href="#" class="youtube" title="YouTube"></a>
     <a href="#" class="google-plus" title="Google Plus"></a>
     <a href="#" class="twitter" title="Twitter"></a>
     <a href="#" class="facebook" title="Facebook"></a>
   </div>
-  <input type="text" placeholder="Procure" class="search">
 
+  <?php if($search_box): ?>
+  <input type="text" placeholder="Procure"  class="search" value="<?php print drupal_get_path('search_block_form'); ?>">
+  
+  <?php endif; ?>
+<!--ajustar antes de subir-->
 </div>
 
 <div class="footer">
-
+      <?php if(isset($secondary_links)) : ?>
+      <?php print theme('links', $secondary_links, array('class' =>'links secondary-links'))?>
+      <?php endif; ?>
   <br>
-  <a href="#">Creative Commons</a>
+  <a class="last-child" href="#">Creative Commons</a>
 </div>
 </body>
 

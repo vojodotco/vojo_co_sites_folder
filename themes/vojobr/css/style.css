@@ -141,12 +141,22 @@ a, {
   margin-bottom: 20px;
 }
 
-.historia{
+.historia {
   width: 165px;
   margin-bottom: 20px;
   display: inline-block;
   margin-right: 24px;
   vertical-align: top;
+
+}
+
+.lista-historias {
+  width: 165px;
+  margin-bottom: 20px;
+  display: inline-block;
+  margin-right: 24px;
+  vertical-align: top;
+  
 }
 
 .main-container > .lista-historias > .historia:last-child{
@@ -274,21 +284,25 @@ a, {
   padding: 30px 20px;
 }
 
-.footer > a{
+.footer > ul > li > a{
   color: #FFF;
   text-decoration: none;
   font-size: 12px;
   padding: 10px 15px;
 }
 
-.footer > a:hover{
+.footer >ul > li > a:hover{
   color: #CCCCCC;
   text-decoration: none;
 }
 
 
-.footer > a:last-child{
-float: right;
+.footer > .last-child{
+  float: right;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 12px;
+
 }
 
 .paginacao{
