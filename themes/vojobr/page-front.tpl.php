@@ -15,8 +15,9 @@ lang="<?php print $language->language?>" dir="<?php print $language->dir?>">
    
 <div class="topbar">
 
-       
-        <?php print $topbar; ?>
+       <?php if ($topbar):?>
+          <?php print $topbar; ?>
+       <?php endif;?>
             <div class="container">
                   <a class="logo" href="http://localhost/drupal-6.28/">VOJO-BR</a>
                   
@@ -29,7 +30,7 @@ lang="<?php print $language->language?>" dir="<?php print $language->dir?>">
                               </div> 
 
             </div>
-    
+   
                            
 </div>
 
@@ -42,34 +43,40 @@ lang="<?php print $language->language?>" dir="<?php print $language->dir?>">
 
 <div class="main-container">
  
-  <div class="carrossel"><?php print $carrossel; ?></div>
+  <div class="carrossel"><?php if ($carrossel):?><?php print $carrossel; ?><?php endif;?></div>
+     <?php if ($content):?>
    <div clas="lista-historias">
       <div class="historia">
-          <?php print $content;?>
+        <?php print $content;?>
       </div>
    </div>
+<?php endif;?>
 
-  <div class="leaderboard"><?php print $leaderboard;?></div>
+
+  <div class="leaderboard"><?php if($leaderboard):?><?php print $leaderboard;?><?php endif;?></div>
 
 
 </div>
 
 <div class="actionbar">
-
+<?php if($actionbar):?>
 <?php print $actionbar;?>
+<?php endif;?>
   
   <input type="text" placeholder="E-mail">
   <input type="text" placeholder="Senha">
 
   <div class="box-share">
+  <?php if($boxshare):?>
   <?php print $boxshare; ?>
+<?php endif;?>
     <a href="#" class="youtube" title="YouTube"></a>
     <a href="#" class="google-plus" title="Google Plus"></a>
     <a href="#" class="twitter" title="Twitter"></a>
     <a href="#" class="facebook" title="Facebook"></a>
   </div>
 
-  <?php if($search_box): ?>
+  <?php if ($search_box): ?>
   <input type="text" placeholder="Procure"  class="search" value="">
   
   <?php endif; ?>

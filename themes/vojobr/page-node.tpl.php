@@ -41,17 +41,13 @@ lang="<?php print $language->language?>" dir="<?php print $language->dir?>">
 
 
 <div class="main-container">
- 
-  <div class="carrossel"><?php print $carrossel; ?></div>
    <div clas="lista-historias">
-      <div class="historia">
+      <div class="page">
           <?php print $content;?>
       </div>
    </div>
 
-  <div class="leaderboard"><?php print $leaderboard;?></div>
-
-
+  
 </div>
 
 <div class="actionbar">

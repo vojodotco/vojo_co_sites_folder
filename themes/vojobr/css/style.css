@@ -17,7 +17,7 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: inline;
+  vertical-align: baseline;
 }
 
 article, aside, details, figcaption, figure,
@@ -137,12 +137,34 @@ a, {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background: url("../img/carrossel.png") no-repeat center;
+  /*background: url("../img/carrossel.png") no-repeat center;*/
   margin-bottom: 20px;
 }
 
-.historia {
+
+
+.historia p{
   width: 165px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px;
+  display: inline-block;
+  margin-right: 101px;
+}
+
+.lista-historias{
+  width: 165px;
+  display: inline-block;
+  vertical-align: top;
+    margin-bottom: 20px;
+  display: inline-block;
+  margin-right: 24px;
+}
+
+
+
+.historia .page{
+  width: 940px;
   margin-bottom: 20px;
   display: inline-block;
   margin-right: 24px;
@@ -150,8 +172,8 @@ a, {
 
 }
 
-.lista-historias {
-  width: 165px;
+.lista-historias .page{
+  width: 940px;
   margin-bottom: 20px;
   display: inline-block;
   margin-right: 24px;
