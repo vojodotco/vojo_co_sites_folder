@@ -45,17 +45,7 @@ lang="<?php print $language->language?>" dir="<?php print $language->dir?>">
   <div class="carrossel"><?php print $carrossel; ?></div>
    <div clas="lista-historias">
       <div class="historia">
-         <div class="vojo-group-summary">
-  <?php if (!empty($fields['field_group_logo_fid']->raw)): ?>
-    <span class="group-logo-listing">
-      <?php print $fields['field_group_logo_fid']->content; ?>
-    </span>
-  <?php endif; ?>
-    <h3><?php print $fields['title']->content ?></h3>
-    <small><?php print $fields['description']->content ?></small>
-    <div class="vojo-group-posts"><?php print $fields['post_count']->content ?> <?php print t('stories'); ?></div>
-    <div class="vojo-group-members"><?php print $fields['member_count']->content ?> <?php print t('members'); ?> </div>
-</div>
+        <?php print $content; ?>
       </div>
    </div>
 
