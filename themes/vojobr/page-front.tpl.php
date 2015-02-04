@@ -19,7 +19,7 @@ lang="<?php print $language->language?>" dir="<?php print $language->dir?>">
           <?php print $topbar; ?>
        <?php endif;?>
             <div class="container">
-                  <a class="logo" href="http://dev.vojo.co/pt-br/">VOJO-BR</a>
+                  <a class="logo" href="http://localhost/drupal-6.28/">VOJO-BR</a>
                   
                      
                          
