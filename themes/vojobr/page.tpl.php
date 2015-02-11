@@ -8,14 +8,7 @@ lang="<?php print $language->language?>" dir="<?php print $language->dir?>">
   <title><?php print $head_title; ?></title>
 <?php print $styles?>
 <?php print $head?>
-
-<script type="text/javascript" src="/misc/jquery.js?p"></script>
-<script type="text/javascript" src="/misc/drupal.js?p"></script>
-<script type="text/javascript" defer="defer" src="/sites/all/modules/admin_menu/admin_menu.js?p"></script>
-<script type="text/javascript" src="/sites/all/modules/panels/js/panels.js?p"></script>
-<script type="text/javascript" src="/sites/all/modules/views_slideshow/js/jquery.cycle.all.min.js?p"></script>
-<script type="text/javascript" src="/sites/all/modules/views_slideshow/contrib/views_slideshow_singleframe/views_slideshow.js?p"></script>
-<script type="text/javascript" src="/sites/all/modules/views_slideshow/contrib/views_slideshow_thumbnailhover/views_slideshow.js?p"></script>
+<?php print $scripts; ?>
 </head>
 
 <body>
