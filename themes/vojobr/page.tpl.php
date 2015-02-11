@@ -46,7 +46,7 @@ lang="<?php print $language->language?>" dir="<?php print $language->dir?>">
   <div class="carrossel"><?php print $carrossel; ?></div>
    <div clas="lista-historias">
       <div class="historia">
-        <?php print $content; ?>
+      
       </div>
    </div>
 
