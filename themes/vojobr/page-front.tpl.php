@@ -46,13 +46,13 @@ lang="<?php print $language->language?>" dir="<?php print $language->dir?>">
 <div class="main-container">
  
   <div class="carrossel"><?php if ($carrossel):?><?php print $carrossel; ?><?php endif;?></div>
-     <?php if ($content):?>
+
    <div clas="lista-historias">
       <div class="historia">
-        <?php print $content;?>
+       
       </div>
    </div>
-<?php endif;?>
+
 
 
   <div class="leaderboard"><?php if($leaderboard):?><?php print $leaderboard;?><?php endif;?></div>
