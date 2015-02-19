@@ -49,8 +49,7 @@ lang="<?php print $language->language?>" dir="<?php print $language->dir?>">
 
    <div clas="lista-historias">
       <div class="historia">
-       <?php print $content; ?>
-       <?php print $listahistoria; ?>
+           <?php print $listahistoria; ?>
       </div>
    </div>
 
