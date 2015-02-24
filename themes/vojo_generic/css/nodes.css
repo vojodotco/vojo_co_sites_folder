@@ -1,0 +1,168 @@
+/**
+ * @file
+ * Node Styling
+ *
+ * Style anything that isn't in the $content variable.
+ */
+
+
+.node /* Node wrapper */ {
+}
+
+.node-sticky /* A sticky node (displayed before others in a list) */ {
+}
+
+.node-unpublished /* Unpublished nodes */ {
+  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+}
+
+.node-unpublished div.unpublished,
+.comment-unpublished div.unpublished /* The word "Unpublished" displayed underneath the content. */ {
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+.node-by-viewer /* A node created by the current user */ {
+}
+
+.node-teaser /* A node displayed as teaser */ {
+}
+
+/* All nodes are given a node-type-FOO class that describes the type of
+ * content that it is. If you create a new content type called
+ * "my-custom-type", it will receive a "node-type-my-custom-type" class.
+ */
+.node-type-page /* Page content node */ {
+}
+
+.node-type-story /* Story content node */ {
+}
+
+.node h2.title /* Node title */ {
+}
+
+.marker /* "New" or "Updated" marker for content that is new or updated for the current user */ {
+  color: #c00;
+}
+
+.node .picture /* The picture of the node author */ {
+}
+
+.node.node-unpublished .picture,
+.comment.comment-unpublished .picture {
+  position: relative; /* Otherwise floated pictures will appear below the "Unpublished" text. */
+}
+
+.node .meta /* Wrapper for submitted and terms data */ {
+}
+
+.node .submitted /* The "posted by" information */ {
+}
+
+.node .terms /* Node terms (taxonomy) */ {
+}
+
+.node .content /* Node's content wrapper */ {
+}
+
+.node ul.links /* Node links. See also the ul.links declaration in the pages.css. */ {
+}
+
+.preview .node /* Preview of the content before submitting new or updated content */ {
+  /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+}
+.colorbox .galleryformatter-view-full {
+  position: absolute;
+  top: 0;
+  right: 99999px;
+}
+#cboxTitle {
+  position: relative;
+  top: 10px;
+}
+.pane-field-image {
+  overflow: hidden;
+}
+.pane-blog-photos .pane-content {
+  position: relative;
+}
+#vojo-node-cycle-prev {
+  position: absolute;
+  right: 34px;
+  bottom: 4px;
+  padding: 5px 10px;
+  background-color: #000;
+  z-index: 50;
+  color: #fff;
+}
+#vojo-node-cycle-next {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  padding: 5px 10px;
+  background-color: #000;
+  z-index: 50;
+  color: #fff;
+}
+div.pane-blog-photos .vojo-cycle-wrapper div.field-items,
+#vojo-node-cycle-prev,
+#vojo-node-cycle-next {
+  cursor: pointer;
+}
+.pane-blog-photos {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+.pane-blog-photos .vojo-cycle-wrapper {
+  height: 500px;
+}
+#vojo-cycle-wrapper {
+  background-color: #f1f1f1;
+}
+.pane-blog-photos .pane-content .field-field-image .field-items {
+  margin: auto;
+}
+.pane-blog-photos .pane-content #vojo-node-cycle-pager {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 300;
+}
+.pane-blog-photos .pane-content #vojo-node-cycle-pager a {
+  padding: 1px 6px;
+  background-color: #000;
+  color: #fff;
+  float: left;
+  margin: 2px;
+}
+.pane-blog-photos .pane-content #vojo-node-cycle-pager a.activeSlide {
+  text-decoration: underline;
+}
+.pane-node-author .pane-title,
+.pane-node-author .pane-content{
+  display: inline;
+  font-size: 14px;
+  font-weight: normal;
+}
+.pane-vojo-node-map-vojo-node-map-ol-map-pane {
+  margin: 20px 0;
+}
+.pane-blog-prev-next-links {
+  margin: 20px 0;
+}
+.blog-prev-next a {
+  background-color: #2980D7;
+  color: #fff;
+  padding: 5px;
+  display: inline-block;
+}

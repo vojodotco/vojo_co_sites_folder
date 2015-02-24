@@ -1,0 +1,95 @@
+/**
+ * @file
+ * Page Background Styling
+ *
+ * The default layout method of Zen doesn't give themers equal-height columns.
+ * However, equal-height columns are difficult to achieve and totally
+ * unnecessary. Instead, use the Faux Columns method described in the following
+ * ALA article:
+ *   http://www.alistapart.com/articles/fauxcolumns/
+ *
+ * Palette from:
+ *   http://www.colourlovers.com/palette/444487/Curiosity_Killed
+ */
+
+
+html body {
+    background: #F1F1F1;
+}
+
+#vojo-header {
+    background: #f1f1f1;
+    border-bottom: 3px solid #DDD;
+    color: #ffffff;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#vojo-header .section {
+}
+
+#vojo-header .container {
+    position: relative;
+}
+
+#vojo-header a.vojo-link {
+    position: absolute;
+    right: 10px;
+    top: -16px;
+    z-index: 100;
+}
+#vojo-header a.vojo-link,
+#vojo-header a.vojo-link:link {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 3px 6px;
+    font-weight: bold;
+}
+#vojo-header a.vojo-link:hover {
+    text-decoration: underline;
+}
+#vojo-header h1.title {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+#vojo-logo img {
+  vertical-align: bottom;
+  display: inline;
+    vertical-align: middle;
+}
+#admin-menu {
+}
+.group-logo-sidebar {
+    float: left;
+}
+#vojo-main-wrapper {
+    background: rgb(255,255,255);
+    padding-top: 1em;
+    padding-bottom: 0;
+}
+
+#vojo-content {
+    margin-bottom: 1em;
+    min-height: 500px;
+}
+
+#vojo-sidebar {
+    
+}
+
+#vojo-footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #f1f1f1;
+    border-top: #ddd solid 3px;
+}
+
+#vojo-footer .section {
+}
+
+#vojo-page-closure {
+    padding-top: 1em;
+    padding-bottom: 4em;
+}

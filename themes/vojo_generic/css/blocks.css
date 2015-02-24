@@ -1,0 +1,237 @@
+/**
+ * @file
+ * Block Styling
+ */
+
+
+.block /* Block wrapper */ {
+  padding-bottom: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.block.first /* The first block in the region */ {
+}
+
+.block.last /* The last block in the region */ {
+}
+
+.block.region-odd /* Zebra striping for each block in the region */ {
+}
+
+.block.region-even /* Zebra striping for each block in the region */ {
+}
+
+.block.odd /* Zebra striping independent of each region */ {
+}
+
+.block.even /* Zebra striping independent of each region */ {
+}
+
+.region-count-1 /* Incremental count for each block in the region */ {
+}
+
+.count-1 /* Incremental count independent of each region */ {
+}
+
+.block h2.title /* Block title */ {
+    color: #2E2633;
+}
+
+.block .content /* Block's content wrapper */ {
+}
+
+#block-aggregator-category-1 /* Block for the latest news items in the first category */ {
+}
+
+#block-aggregator-feed-1 /* Block for the latest news items in the first feed */ {
+}
+
+#block-block-1 /* First administrator-defined block */ {
+}
+
+#block-blog-0 /* "Recent blog posts" block */ {
+}
+
+#block-book-0 /* "Book navigation" block for the current book's table of contents */ {
+}
+
+#block-comment-0 /* "Recent comments" block */ {
+}
+
+#block-forum-0 /* "Active forum topics" block */ {
+}
+
+#block-forum-1 /* "New forum topics" block */ {
+}
+
+#block-menu-primary-links /* "Primary links" block */ {
+    margin: 0em;
+    padding: 0em;
+}
+#block-menu-primary-links h2 {
+    display: none;
+}
+#block-menu-primary-links ul {
+    list-style: none;
+    margin: 0.5em 0em;
+    padding: 0em;
+}
+#block-menu-primary-links ul li {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+#block-menu-primary-links ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.0em;
+    color: #EFFFCD;
+}
+
+#block-menu-secondary-links /* "Secondary links" block */ {
+    
+}
+#block-menu-secondary-links ul {
+    list-style: none;
+    margin: 0em;
+    padding: 0em;
+    margin-bottom: 0.5em;
+}
+#block-menu-secondary-links ul li {
+    display: inline-block;
+    padding: 0.1em 0.5em 0.25em 0.5em;
+    margin-right: 0.15em;
+    background-color: rgb(41,128,215);;
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;    
+}
+#block-menu-secondary-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+#block-node-0 /* "Syndicate" block for primary RSS feed */ {
+}
+
+#block-poll-0 /* "Most recent poll" block */ {
+}
+
+#block-profile-0 /* "Author information" block for the profile of the page's author */ {
+}
+
+#block-search-0 /* "Search form" block */ {
+    margin: 0em;
+    padding: 0em;
+}
+#block-search-0 h2 {
+    display: none;
+}
+
+
+#block-statistics-0 /* "Popular content" block */ {
+}
+
+#block-user-0 /* "User login form" block */ {
+}
+
+#block-user-1 /* "Navigation" block for Drupal navigation menu */ {
+}
+
+#block-user-2 /* "Who's new" block for a list of the newest users */ {
+}
+
+#block-user-3 /* "Who's online" block for a list of the online users */ {
+}
+
+/** footer licence details **/
+
+#block-vojo-license img {
+    vertical-align: middle;
+}
+
+/** blocks in the sidebar **/
+
+#vojo-sidebar .block,
+.panel-sidebar .pane-block {
+    padding-left: 1em;
+    padding-top: 1px;
+   /* border-top: 1px dashed #ddd; */
+    border-left: 2px solid #ddd;
+}
+
+#vojo-sidebar .block-tagadelic a {
+    text-decoration: none;
+}
+.panel-sidebar .pane-locale-0 {
+    border: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+
+/** Vojo group email/call-in details **/
+#block-vojo_og-vojo-group-details p {
+  font-size: 16px;
+  line-height: 18px;
+  margin: 9px 0px 0px 0px;
+}
+#block-vojo_og-vojo-group-details p em {
+  font-weight: bold;
+}
+
+/** Custom vojo create content links **/
+
+#block-vojo_og-vojo-group-details .item-list ul,
+.pane-vojo-og-vojo-group-details .item-list ul,
+ ul#vojo-create-content-links {
+  padding-left: 0;
+  margin-left: 0;
+}
+#block-vojo_og-vojo-group-details .item-list ul li,
+.pane-vojo-og-vojo-group-details .item-list ul li {
+  border-bottom: #ddd solid 1px;
+  padding: 5px;
+  list-style-type: none;
+  list-style-image: none;
+  margin-left: 0;
+}
+#block-vojo_og-vojo-group-details .item-list ul li.last,
+.pane-vojo-og-vojo-group-details .item-list ul li.last {
+  border-bottom: none;
+}
+
+.pane-og-my table {
+  width: 100%;
+}
+
+.pane-user-action-links {
+  margin: 0 0 30px;
+  overflow: hidden;
+}
+ul#vojo-create-content-links li {
+  display: inline;
+  float: left;
+  background-color: #2194E0;
+  padding: 6px 30px;
+  margin-right: 10px;
+}
+ul#vojo-create-content-links li a {
+  color: #fff;
+  font-size: 16px;
+}
+div.ctools-modal-content .modal-header {
+  background-color: #2980D7;
+  padding: 15px;
+}
+div.ctools-modal-content .modal-header .close {
+  text-indent: -9999px;
+  opacity: 1;
+}
+div.ctools-modal-content .modal-header .close img {
+  float: right;
+}
+div.ctools-modal-content {
+  box-shadow: 6px 6px 10px #888;
+  border: none;
+}

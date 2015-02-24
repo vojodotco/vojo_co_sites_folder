@@ -1,0 +1,120 @@
+/**
+ * @file
+ * Navigation Styling
+ *
+ * Default menu styling (ul.menu) is defined in system-menus.css.
+ */
+
+
+/*
+ * The active item in a Drupal menu
+ */
+li a.active {
+  color: #000;
+}
+
+/*
+ * Navigation bar
+ */
+#vojo-navigation {
+    display: block;
+    float: none;
+    height: auto;
+    background: #ddd;
+}
+
+.region-navigation {
+}
+
+/*
+ * Primary and Secondary menu links
+ */
+#main-menu {
+}
+
+#secondary-menu {
+}
+
+/*
+ * Menu blocks
+ */
+.block-menu {
+}
+
+/*
+ * "Menu block" blocks. See http://drupal.org/project/menu_block
+ */
+.block-menu_block {
+}
+
+#block-menu-secondary-links {
+    margin: 0em;
+    padding: 0em;
+}
+#block-menu-secondary-links h2.title {
+    display: none;
+}
+#block-menu-secondary-links ul {
+    list-style: none;
+    margin: 0em;
+    padding: 0em;
+}
+#block-menu-secondary-links li.leaf {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+/** Group nav menu **/
+
+#block-vojo_og-generic-group-menu {
+    margin-bottom: 0em;
+    margin: 0.5em 0em;
+    padding-bottom: 1px;
+}
+
+#block-vojo_og-generic-group-menu h2 {
+    display: inline-block;
+    margin: 0em;
+    padding: 0em;
+}
+
+#block-vojo_og-generic-group-menu ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0em;
+    padding: 0em;
+}
+
+#block-vojo_og-generic-group-menu ul li {
+    margin-left: 0.5em;
+    display: inline-block;
+    list-style-type: none;
+    list-style-image: none;
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#block-vojo_og-generic-group-menu ul li a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.item-list .pager {
+  margin: 0;
+}
+.item-list .pager li {
+  padding: 0.35em;
+}
+body.section-users .item-list ul,
+dl.user-member ul.item-list {
+  margin-left: 0;
+  padding-left: 0;
+}
+body.section-users .item-list ul li,
+dl.user-member ul.item-list li {
+  border-bottom: #ddd solid 1px;
+  margin-left: 0; 
+  padding: 8px 5px;
+  list-style: none;
+  list-style-image: none; 
+}
